@@ -1,0 +1,475 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  min-height: 100vh;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+  
+  #addnewuser {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 5px;
+  }
+}
+
+.sidebar {
+  background-color: #37474f;
+  color: #fff;
+  width: 200px;
+  padding: 20px;
+}
+
+.sidebar h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar li {
+  margin-bottom: 10px;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  padding: 10px 20px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.sidebar a:hover {
+  background-color: #293a40;
+}
+
+.content {
+  flex-grow: 1;
+  background-color: #fff;
+  padding: 20px;
+  overflow: auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.logout {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: inline-block;
+  outline: none;
+  cursor: pointer;
+  font-weight: 500;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  height: 36px;
+  line-height: 34px;
+  font-size: 14px;
+  color: #241c15;
+  background-color: transparent;
+  transition: background-color 0.2s ease-in-out 0s, opacity 0.2s ease-in-out 0s;
+  padding: 0 18px;
+}
+
+.logout:hover {
+  color: red;
+}
+
+.add-candidate-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center; 
+}
+
+.add-candidate-form input[type="text"],
+.add-candidate-form select {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc; 
+  border-radius: 4px;
+}
+
+.add-candidate-form select {
+  background-color: #fff;
+}
+
+.add-candidate-form input[type="file"] {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.add-candidate-form button[type="submit"] {
+  background-color: #B82727;
+  color: white;
+  font-weight: bolder;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.add-candidate-form button:hover{
+  background: #a32929;
+  box-shadow: 0 6px 20px rgb(0 118 255 / 23%);
+
+}
+
+#removeCandidate table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#removeCandidate th,
+#removeCandidate td {
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+#removeCandidate th {
+  background-color: #eee;
+  font-weight: 600;
+  text-align: left;
+}
+
+#removeCandidate img {
+  max-width: 100px;
+  max-height: 100px;
+}
+
+#removeCandidate button {
+  padding: 5px 10px;
+  background-color: #ff5722;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#removeCandidate button:hover {
+  background-color: #e64a19;
+}
+
+.centered {
+  text-align: center;
+  margin-bottom: 20px;
+  background-color: transparent;
+  color: red;
+}
+
+#editCandidate {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+#editCandidate h2 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+#editCandidate table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#editCandidate th,
+#editCandidate td {
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+#editCandidate th {
+  background-color: #eee;
+  font-weight: 600;
+}
+
+#editCandidate img {
+  max-width: 50px;
+  max-height: 50px;
+}
+
+#editCandidate a {
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: #B82727;
+  font-weight: bolder;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  margin-bottom: 5px;
+}
+
+#editCandidate a:hover {
+  background: #a32929;
+  box-shadow: 0 6px 20px rgb(0 118 255 / 23%);
+}
+
+#editCandidate button[type="submit"] {
+  
+  padding: 5px 10px;
+  background-color: #E3AD03;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#editCandidate button[type="submit"]:hover {
+  background-color: #E3AD03;
+}
+
+#removeUser {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+#removeUser h2 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+#removeUser table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#removeUser th,
+#removeUser td {
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+#removeUser th {
+  background-color: #f5f5f5;
+  font-weight: 600;
+  text-align: center;
+}
+
+#removeUser td {
+  text-align: center;
+}
+
+#removeUser tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+#removeUser tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+#removeUser button {
+  padding: 5px 10px;
+  background-color: #B82727;
+  color: white;
+  font-weight: bolder;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#removeUser button:hover {
+  background: #a32929;
+  box-shadow: 0 6px 20px rgb(0 118 255 / 23%);
+}
+
+#registeredUsers {
+  margin-bottom: 30px;
+}
+
+#votedUsers {
+  margin-bottom: 30px;
+}
+
+#results {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+#results table {
+  margin: 0 auto;
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 800px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#results th,
+#results td {
+  padding: 12px;
+}
+
+#results th {
+  font-weight: 600;
+  background-color: #f5f5f5;
+}
+
+#results tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+#results tr:hover {
+  background-color: #f5f5f5;
+}
+
+#results td:first-child {
+  text-align: center;
+}
+
+#results td:last-child {
+  text-align: center;
+}
+
+#addnewuser {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f5f5f5;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+#addnewuser input,
+#addnewuser select {
+    margin-bottom: 10px;
+    padding: 5px;
+  }
+
+#addnewuser h2 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+#addnewuser .error {
+  color: red;
+}
+
+#addnewuser input[type="number"],
+#addnewuser input[type="text"],
+#addnewuser input[type="password"],
+#addnewuser input[type="email"] {
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  color: #333;
+}
+
+#addnewuser button[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  background-color: #B82727;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: bolder;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#addnewuser button[type="submit"]:hover {
+  background: #a32929;
+  box-shadow: 0 6px 20px rgb(0 118 255 / 23%);
+  
+}
+
+.message-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: transparent;
+  padding: 10px;
+  box-sizing: border-box;
+  z-index: 9999;
+  text-align: left;
+  font-size: bold;
+}
+
+.success-message {
+  color: #28a745;
+  text-align: center;
+}
+
+.error-message {
+  color: #dc3545;
+  text-align: center;
+}
+
+
+.voted-users table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #ddd;
+  background-color: #f9f9f9;
+}
+
+.voted-users th,
+.voted-users td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.voted-users th {
+  background-color: #f2f2f2;
+  border-right: 1px solid #ddd;
+}
+
+.voted-users th:last-child {
+  border-right: none;
+}
+
+.voted-users tr:hover {
+  background-color: #f5f5f5;
+}
+
+.voted-users .label {
+  display: block;
+  margin-top: 8px;
+  font-size: 14px;
+}
+
+
+h2 {
+  text-align: center;
+}

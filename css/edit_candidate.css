@@ -1,0 +1,107 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+  font-size: 24px;
+  margin-top: 20px;
+}
+
+form {
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+form input,
+form textarea,
+form select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+form select {
+  height: 40px;
+}
+
+form input[type="submit"] {
+  background-color: #B82727;
+  color: white;
+  font-weight: bolder;
+  border: none;
+  border-radius: 4px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+  background: #a32929;
+  box-shadow: 0 6px 20px rgb(0 118 255 / 23%);;
+}
+
+form img {
+  display: block;
+  margin: 10px 0;
+  max-width: 100%;
+  height: auto;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #ccc;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #b3b3b3;
+}
+
+.success-message {
+  color: #155724;
+  background-color: transparent;
+  padding: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.error-message {
+  color: #721c24;
+  background-color: #f8d7da;
+  border: 1px solid #f5c6cb;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.centered {
+  text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+  form {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 0;
+  }
+}
